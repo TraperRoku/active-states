@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+@root{
+    Light red: hsl(0, 100%, 67%)
+    - Orangey yellow: hsl(39, 100%, 56%)
+    - Green teal: hsl(166, 100%, 37%)
+    - Cobalt blue: hsl(234, 85%, 45%)
+    
+    ## Gradients
+    
+    - Light slate blue (background): hsl(252, 100%, 67%)
+    - Light royal blue (background): hsl(241, 81%, 54%)
+    
+    - Violet blue (circle): hsla(256, 72%, 46%, 1)
+    - Persian blue (circle): hsla(241, 72%, 46%, 0)
+    
+    
+    
+    ### Neutral
+    
+    - White: hsl(0, 0%, 100%)
+    - Pale blue: hsl(221, 100%, 96%)
+    - Light lavender: hsl(241, 100%, 89%)
+    - Dark gray blue: hsl(224, 30%, 27%)
+    
+}
+body{
+    font-size: 15px;
+    font-family: 'Hanken Grotesk', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+    background-color: var(--Pale-blue);
+
+}
+
+.container{
+    width: 650px;
+    background-color:var(--White);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2rem;
+     height: auto;
+   
+}
+
+.result{
+background:linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+width: 50%;
+border-radius: 2rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.circle{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background:linear-gradient(to bottom,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.circle p{
+    margin-top:-25px;
+    color: hsl(241, 100%, 89%)
+}
+.circle h1{
+    font-size: 3.1rem;
+    color: hsl(221, 100%, 96%);
+}
+
+.result h3{
+    color: hsl(241, 100%, 89%);
+    font-size: 1.15rem;
+    margin-top:1.8rem;
+}
+.info{
+    color: hsl(241, 100%, 89%);
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.result h2{
+    color: aliceblue;
+    font-size: 1.8rem;
+    margin-bottom: -3px;
+    
+}
+
+.wyniki{
+    width: 50%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    
+    
+}
+
+.wyniki h3{
+    margin-top: 2px;
+    font-size: 1.3rem;
+    font-weight: 880;
+    
+}
+
+ .rows{
+    display: flex;
+    flex-direction: column;
+    gap:0.6rem;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding:0.3rem 2rem;
+}
+
+.row:nth-child(1){
+    background-color:hsla(0, 60%, 72%, 0.137) ;
+
+}
+
+.row:nth-child(2){
+    background-color:hsla(69, 98%, 48%, 0.137) ;
+
+}
+.row:nth-child(3){
+    background-color:hsla(115, 98%, 48%, 0.137) ;
+
+}
+.row:nth-child(4){
+    background-color:hsla(254, 96%, 78%, 0.137) ;
+
+}
+
+button{
+    margin-top: 1rem;
+    background:linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    color: aliceblue;
+    font-size: .9rem;
+    border-radius: 20px;
+    border:none ;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.24);
+    height: 50px;
+
+}
